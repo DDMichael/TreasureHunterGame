@@ -1,0 +1,50 @@
+#grid{
+  position: absolute;
+  margin: auto 0;
+  width: 550px;
+  height: 550px;
+  background-color: #5A83BA;
+  cellspacing: 1;
+}
+#grid td{
+  width: 10%;
+  height: 10%;
+  background-color: #C2C2C2; 
+}
+
+#setup{
+  margin-left: 140px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+#play{
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+#end{
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+#container{
+  width: 1000px;
+  overflow: auto;
+}
+
+#left{
+/*margin-left: 3px;*/
+  height: 30%;
+  width: 35%;
+  float: left;
+  overflow: auto;
+}
+#right{
+  height: 70%;
+  width: 65%;
+  float: right;
+}

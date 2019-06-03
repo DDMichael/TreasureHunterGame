@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Game</title>
+  <script type="text/javascript" src="text.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head> 
+
+<body>
+  <div id="container">
+    <div id="left">
+      <br/> <br/> <br/> <br/>
+      <span>Round: </span>
+      <span id="roundNum"></span> 
+      <br/>
+      <br/>
+
+      <span>Scores: </span>
+      <span id="scoreNum"></span>
+      <br/>
+      <br/> 
+
+      <span>Turn: </span>
+      <span id="turn"></span>
+      <br/>
+      <br/>
+
+      <span>Outcome:</span>
+      <span id="outcome"></span>
+
+    </div>
+    <div id="right">
+      <br/> 
+      <input type="button" id="setup" value="SETUP" onclick="setup();" /> 
+      <input type="button" id="play" value="PLAY" onclick="play();" /> 
+      <input type="button" id="end" value="END" onclick="endgame();" /> 
+      <br/> <br/>
+      <table id="grid">
+        <tr bgcolor="white">
+          <td id="0" onclick="input(id)"></td>
+      	  <td id="1" onclick="input(id)"></td>
+      	  <td id="2" onclick="input(id)"></td>
+      	  <td id="3" onclick="input(id)"></td>
+      	  <td id="4" onclick="input(id)"></td>
+      	  <td id="5" onclick="input(id)"></td>
+      	  <td id="6" onclick="input(id)"></td>
+      	  <td id="7" onclick="input(id)"></td>
+        	<td id="8" onclick="input(id)"></td>
+        	<td id="9" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="10" onclick="input(id)"></td>
+        	<td id="11" onclick="input(id)"></td>
+        	<td id="12" onclick="input(id)"></td>
+        	<td id="13" onclick="input(id)"></td>
+        	<td id="14" onclick="input(id)"></td>
+        	<td id="15" onclick="input(id)"></td>
+        	<td id="16" onclick="input(id)"></td>
+        	<td id="17" onclick="input(id)"></td>
+        	<td id="18" onclick="input(id)"></td>
+        	<td id="19" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="20" onclick="input(id)"></td>
+        	<td id="21" onclick="input(id)"></td>
+        	<td id="22" onclick="input(id)"></td>
+        	<td id="23" onclick="input(id)"></td>
+        	<td id="24" onclick="input(id)"></td>
+        	<td id="25" onclick="input(id)"></td>
+        	<td id="26" onclick="input(id)"></td>
+        	<td id="27" onclick="input(id)"></td>
+        	<td id="28" onclick="input(id)"></td>
+        	<td id="29" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="30" onclick="input(id)"></td>
+        	<td id="31" onclick="input(id)"></td>
+        	<td id="32" onclick="input(id)"></td>
+        	<td id="33" onclick="input(id)"></td>
+        	<td id="34" onclick="input(id)"></td>
+        	<td id="35" onclick="input(id)"></td>
+        	<td id="36" onclick="input(id)"></td>
+        	<td id="37" onclick="input(id)"></td>
+        	<td id="38" onclick="input(id)"></td>
+        	<td id="39" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="40" onclick="input(id)"></td>
+        	<td id="41" onclick="input(id)"></td>
+        	<td id="42" onclick="input(id)"></td>
+        	<td id="43" onclick="input(id)"></td>
+        	<td id="44" onclick="input(id)"></td>
+        	<td id="45" onclick="input(id)"></td>
+        	<td id="46" onclick="input(id)"></td>
+        	<td id="47" onclick="input(id)"></td>
+        	<td id="48" onclick="input(id)"></td>
+        	<td id="49" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="50" onclick="input(id)"></td>
+        	<td id="51" onclick="input(id)"></td>
+        	<td id="52" onclick="input(id)"></td>
+        	<td id="53" onclick="input(id)"></td>
+        	<td id="54" onclick="input(id)"></td>
+        	<td id="55" onclick="input(id)"></td>
+        	<td id="56" onclick="input(id)"></td>
+        	<td id="57" onclick="input(id)"></td>
+        	<td id="58" onclick="input(id)"></td>
+        	<td id="59" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="60" onclick="input(id)"></td>
+        	<td id="61" onclick="input(id)"></td>
+        	<td id="62" onclick="input(id)"></td>
+        	<td id="63" onclick="input(id)"></td>
+        	<td id="64" onclick="input(id)"></td>
+        	<td id="65" onclick="input(id)"></td>
+        	<td id="66" onclick="input(id)"></td>
+        	<td id="67" onclick="input(id)"></td>
+        	<td id="68" onclick="input(id)"></td>
+        	<td id="69" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="70" onclick="input(id)"></td>
+        	<td id="71" onclick="input(id)"></td>
+        	<td id="72" onclick="input(id)"></td>
+        	<td id="73" onclick="input(id)"></td>
+        	<td id="74" onclick="input(id)"></td>
+        	<td id="75" onclick="input(id)"></td>
+        	<td id="76" onclick="input(id)"></td>
+        	<td id="77" onclick="input(id)"></td>
+        	<td id="78" onclick="input(id)"></td>
+        	<td id="79" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="80" onclick="input(id)"></td>
+        	<td id="81" onclick="input(id)"></td>
+        	<td id="82" onclick="input(id)"></td>
+        	<td id="83" onclick="input(id)"></td>
+        	<td id="84" onclick="input(id)"></td>
+        	<td id="85" onclick="input(id)"></td>
+        	<td id="86" onclick="input(id)"></td>
+        	<td id="87" onclick="input(id)"></td>
+        	<td id="88" onclick="input(id)"></td>
+        	<td id="89" onclick="input(id)"></td>
+        </tr>
+        <tr bgcolor="white">
+        	<td id="90" onclick="input(id)"></td>
+        	<td id="91" onclick="input(id)"></td>
+        	<td id="92" onclick="input(id)"></td>
+        	<td id="93" onclick="input(id)"></td>
+        	<td id="94" onclick="input(id)"></td>
+        	<td id="95" onclick="input(id)"></td>
+        	<td id="96" onclick="input(id)"></td>
+        	<td id="97" onclick="input(id)"></td>
+        	<td id="98" onclick="input(id)"></td>
+        	<td id="99" onclick="input(id)"></td>
+        </tr>
+      </table>
+
+     
+    </div>
+  </div>
+      
+</body>
+</html>
